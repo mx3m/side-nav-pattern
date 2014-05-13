@@ -228,62 +228,60 @@ header {
 /* line 57, ../sass/partials/_navigation.scss */
 .lines {
   position: relative;
-  top: 1px;
+  top: 8px;
   margin-left: -10px;
   display: inline-block;
   width: 30px;
-  height: 3px;
+  height: 4px;
   background: #357dd0;
-  border-radius: 20px;
   opacity: 0;
   transition: all .3s ease-in-out;
   -webkit-transition: all .3s ease-in-out; }
-  /* line 71, ../sass/partials/_navigation.scss */
+  /* line 70, ../sass/partials/_navigation.scss */
   .lines::before, .lines::after {
     content: '';
     display: inline-block;
     position: absolute;
     width: 30px;
-    height: 3px;
+    height: 4px;
     background: #357dd0;
-    border-radius: 20px;
     transition: all .3s ease;
     -webkit-transition: all .3s ease; }
-  /* line 85, ../sass/partials/_navigation.scss */
+  /* line 83, ../sass/partials/_navigation.scss */
   .lines::before {
-    top: 8px; }
-  /* line 86, ../sass/partials/_navigation.scss */
+    top: 10px; }
+  /* line 84, ../sass/partials/_navigation.scss */
   .lines::after {
-    top: -8px; }
+    top: -10px; }
 
-/* line 90, ../sass/partials/_navigation.scss */
+/* line 88, ../sass/partials/_navigation.scss */
 .animated {
   transition: all .3s ease-in-out;
   -webkit-transition: all .3s ease-in-out; }
-  /* line 94, ../sass/partials/_navigation.scss */
+  /* line 92, ../sass/partials/_navigation.scss */
   .animated.slideInDown ul, .animated.slideInDown h1 {
     -webkit-transform: translateX(0);
     transform: translateX(0);
     opacity: 1; }
-  /* line 99, ../sass/partials/_navigation.scss */
+  /* line 97, ../sass/partials/_navigation.scss */
   .animated.slideInDown .lines {
     opacity: 0; }
-  /* line 102, ../sass/partials/_navigation.scss */
+  /* line 100, ../sass/partials/_navigation.scss */
   .animated.slideInUp ul, .animated.slideInUp h1 {
     -webkit-transform: translateX(-30px);
     transform: translateX(-30px);
     opacity: 0; }
-  /* line 107, ../sass/partials/_navigation.scss */
+  /* line 105, ../sass/partials/_navigation.scss */
   .animated.slideInUp .lines {
     -webkit-transform: translateX(45px);
     transform: translateX(45px);
     opacity: 1; }
-  /* line 113, ../sass/partials/_navigation.scss */
+  /* line 111, ../sass/partials/_navigation.scss */
   .animated.slideInUp:hover ul, .animated.slideInUp:hover h1 {
     -webkit-transform: translateX(0);
     transform: translateX(0);
     opacity: 1; }
-  /* line 118, ../sass/partials/_navigation.scss */
+  /* line 116, ../sass/partials/_navigation.scss */
   .animated.slideInUp:hover .lines {
     -webkit-transform: translateX(-40px);
     transform: translateX(-40px);
