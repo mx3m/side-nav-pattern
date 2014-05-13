@@ -222,6 +222,9 @@ header {
       padding: 7px 0 7px 35px;
       border-left: 8px solid transparent;
       cursor: pointer; }
+      /* line 47, ../sass/partials/_navigation.scss */
+      header #main-nav li:hover {
+        color: #59a4fa; }
       @media (max-width: 829px) {
         /* line 39, ../sass/partials/_navigation.scss */
         header #main-nav li {
@@ -230,7 +233,7 @@ header {
           margin-right: 10px;
           border: none; } }
 
-/* line 57, ../sass/partials/_navigation.scss */
+/* line 58, ../sass/partials/_navigation.scss */
 .lines {
   position: relative;
   top: 8px;
@@ -242,7 +245,7 @@ header {
   opacity: 0;
   transition: all .3s ease-in-out;
   -webkit-transition: all .3s ease-in-out; }
-  /* line 70, ../sass/partials/_navigation.scss */
+  /* line 71, ../sass/partials/_navigation.scss */
   .lines::before, .lines::after {
     content: '';
     display: inline-block;
@@ -252,41 +255,41 @@ header {
     background: #357dd0;
     transition: all .3s ease;
     -webkit-transition: all .3s ease; }
-  /* line 83, ../sass/partials/_navigation.scss */
+  /* line 84, ../sass/partials/_navigation.scss */
   .lines::before {
     top: 10px; }
-  /* line 84, ../sass/partials/_navigation.scss */
+  /* line 85, ../sass/partials/_navigation.scss */
   .lines::after {
     top: -10px; }
 
-/* line 88, ../sass/partials/_navigation.scss */
+/* line 89, ../sass/partials/_navigation.scss */
 .animated {
   transition: all .3s ease-in-out;
   -webkit-transition: all .3s ease-in-out; }
-  /* line 92, ../sass/partials/_navigation.scss */
+  /* line 93, ../sass/partials/_navigation.scss */
   .animated.slideInDown ul, .animated.slideInDown h1 {
     -webkit-transform: translateX(0);
     transform: translateX(0);
     opacity: 1; }
-  /* line 97, ../sass/partials/_navigation.scss */
+  /* line 98, ../sass/partials/_navigation.scss */
   .animated.slideInDown .lines {
     opacity: 0; }
-  /* line 100, ../sass/partials/_navigation.scss */
+  /* line 101, ../sass/partials/_navigation.scss */
   .animated.slideInUp ul, .animated.slideInUp h1 {
     -webkit-transform: translateX(-30px);
     transform: translateX(-30px);
     opacity: 0; }
-  /* line 105, ../sass/partials/_navigation.scss */
+  /* line 106, ../sass/partials/_navigation.scss */
   .animated.slideInUp .lines {
     -webkit-transform: translateX(45px);
     transform: translateX(45px);
     opacity: 1; }
-  /* line 111, ../sass/partials/_navigation.scss */
+  /* line 112, ../sass/partials/_navigation.scss */
   .animated.slideInUp:hover ul, .animated.slideInUp:hover h1 {
     -webkit-transform: translateX(0);
     transform: translateX(0);
     opacity: 1; }
-  /* line 116, ../sass/partials/_navigation.scss */
+  /* line 117, ../sass/partials/_navigation.scss */
   .animated.slideInUp:hover .lines {
     -webkit-transform: translateX(-40px);
     transform: translateX(-40px);
