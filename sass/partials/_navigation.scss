@@ -1,0 +1,125 @@
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  @media (max-width: 829px) {
+    position: relative;
+  }
+
+  #main-nav {
+    display: block;
+    padding: 40px 20px 40px 0;
+    @media (max-width: 829px) {
+      padding-top: 20px;
+    }
+    h1 { 
+      font-size: 130%; 
+      position: absolute;
+      top: 40px;
+      left: 40px;
+      border-bottom: 4px solid $brand-color;
+      transition: all .3s ease-in-out;
+      -webkit-transition: all .3s ease-in-out;
+
+      @media (max-width: 829px) {
+        margin-left: 20px;
+      }
+    }
+    ul { 
+      margin-top: 40px;
+      transition: all .3s ease-in-out;
+      -webkit-transition: all .3s ease-in-out;
+      @media (max-width: 829px) {
+        display: flex;
+        display: -webkit-flex;
+        padding-left: 20px;
+      }
+    }
+    li { 
+      font-weight: 300; 
+      color: $brand-color; 
+      transition: all .3s ease-in-out;
+      -webkit-transition: all .3s ease-in-out;
+      padding: 7px 0 7px 35px;
+      border-left: 8px solid transparent;
+      cursor: pointer;
+      @media (max-width: 829px) {
+        display: inline-block;
+        padding: 0;
+        margin-right: 10px;
+        border: none;
+      }
+    }
+  }
+}
+
+.lines {
+  position: relative;
+  top: 1px;
+  margin-left: -10px;
+  display: inline-block;
+  width: 30px;
+  height: 3px;
+  background: $brand-color;
+  border-radius: 20px;
+  opacity: 0;
+
+  transition: all .3s ease-in-out;
+  -webkit-transition: all .3s ease-in-out;
+
+  &::before,
+  &::after {
+    content: '';
+    display: inline-block;
+    position: absolute;
+    width: 30px;
+    height: 3px;
+    background: $brand-color;
+    border-radius: 20px; 
+
+    transition: all .3s ease;
+    -webkit-transition: all .3s ease;
+  }
+
+  &::before { top: 8px; }
+  &::after { top: -8px; }
+
+}
+
+.animated {
+  transition: all .3s ease-in-out;
+  -webkit-transition: all .3s ease-in-out;
+  &.slideInDown {
+    ul, h1 {
+      -webkit-transform: translateX(0);
+      transform: translateX(0);
+      opacity: 1;
+    }
+    .lines { opacity: 0; }
+  }
+  &.slideInUp {
+    ul, h1 {
+      -webkit-transform: translateX(-30px);
+      transform: translateX(-30px);
+      opacity: 0;
+    }
+    .lines { 
+      -webkit-transform: translateX(45px);
+      transform: translateX(45px);
+      opacity: 1; 
+    }
+    &:hover {
+      ul, h1 { 
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+        opacity: 1; 
+      }
+      .lines { 
+        -webkit-transform: translateX(-40px);
+        transform: translateX(-40px);
+        opacity: 0; 
+      }
+    }
+  }
+}
