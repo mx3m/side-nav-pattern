@@ -112,6 +112,15 @@ h6 {
   color: #a3c1ea; }
 
 /* line 51, ../sass/partials/_global.scss */
+hr {
+  width: 35px;
+  height: 3px;
+  margin: 0 auto 15px;
+  background-color: #b3c4da;
+  box-shadow: none;
+  border: none; }
+
+/* line 60, ../sass/partials/_global.scss */
 .wrapper {
   display: flex;
   display: -webkit-flex;
@@ -119,50 +128,46 @@ h6 {
   max-width: 860px;
   margin: 0 auto; }
 
-/* line 59, ../sass/partials/_global.scss */
+/* line 68, ../sass/partials/_global.scss */
 main,
 aside {
   margin: 40px 0; }
 
-/* line 64, ../sass/partials/_global.scss */
+/* line 73, ../sass/partials/_global.scss */
 main {
   flex: 0 0 75%;
   box-sizing: border-box; }
   @media (max-width: 829px) {
-    /* line 64, ../sass/partials/_global.scss */
+    /* line 73, ../sass/partials/_global.scss */
     main {
       width: 100%;
       margin: 0;
       padding: 20px; } }
 
-/* line 74, ../sass/partials/_global.scss */
+/* line 83, ../sass/partials/_global.scss */
 aside {
   order: 1;
   -webkit-order: 1;
   flex: 0 0 25%;
   padding: 10px 0 0 60px;
   text-align: center; }
-  /* line 80, ../sass/partials/_global.scss */
+  /* line 89, ../sass/partials/_global.scss */
   aside img {
     max-width: 100%;
     border-radius: 50%;
     margin-bottom: 30px; }
-  /* line 82, ../sass/partials/_global.scss */
-  aside h6 {
-    padding-bottom: 30px;
-    border-bottom: 2px solid #ccddf4; }
-  /* line 83, ../sass/partials/_global.scss */
+  /* line 90, ../sass/partials/_global.scss */
   aside small {
     font-size: 60%;
     font-weight: 300;
     color: #b3c4da; }
 
-/* line 86, ../sass/partials/_global.scss */
+/* line 93, ../sass/partials/_global.scss */
 figure img {
   max-width: 100%;
   max-height: 100vh; }
 
-/* line 91, ../sass/partials/_global.scss */
+/* line 98, ../sass/partials/_global.scss */
 .post-title {
   color: #222222; }
 

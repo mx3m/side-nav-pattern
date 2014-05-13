@@ -48,6 +48,15 @@ h6 {
   color: $text-light;
 }
 
+hr {
+  width: 35px;
+  height: 3px; 
+  margin: 0 auto 15px;
+  background-color: desaturate($text-light, 30%);
+  box-shadow: none;
+  border: none;
+}
+
 .wrapper {
   display: flex;
   display: -webkit-flex;
@@ -78,8 +87,6 @@ aside {
   padding: 10px 0 0 60px;
   text-align: center;
   img { max-width: 100%; border-radius: 50%; margin-bottom: 30px; }
-
-  h6 { padding-bottom: 30px; border-bottom: 2px solid lighten($text-light, 10%); }
   small { font-size: 60%; font-weight: 300; color: desaturate($text-light, 30%); }
 }
 
